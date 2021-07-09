@@ -1,6 +1,6 @@
 <application>
   <component name="LanguageInjectionConfiguration">
-    <injection language="MySQL" injector-id="java">
+    <injection language="SQLite" injector-id="java">
       <display-name>Statement (java.sql)</display-name>
       <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("addBatch").withParameters("java.lang.String").definedInClass("java.sql.Statement"))]]></place>
       <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("execute").withParameters("java.lang.String").definedInClass("java.sql.Statement"))]]></place>
