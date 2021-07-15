@@ -14,11 +14,12 @@ public class Main {
     private static final String INSERT_NEW = "INSERT INTO dish(title, description, rating, published, created, icon) "
             + " VALUES(?,?,?,?,?,?)";
 
-
     public static void main(String[] args) {
-
-        try (Connection connection = DriverManager.getConnection(URL, LOGIN, PASSWORD);
-             PreparedStatement statement = connection.prepareStatement(INSERT_NEW)) {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try {
+            connection = DriverManager.getConnection(URL, LOGIN, PASSWORD);
+            statement = connection.prepareStatement(INSERT_NEW);
 
             statement.setString(1, "Title");
             statement.setString(2, "Description");
@@ -28,9 +29,23 @@ public class Main {
             statement.setBlob(6, new FileInputStream("chair.png"));
 
             statement.execute();
-
         } catch (SQLException | FileNotFoundException e) {
             e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
+            }
         }
     }
 }
