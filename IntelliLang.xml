@@ -1,0 +1,8 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <injection language="PostgreSQL" injector-id="java">
+      <display-name>Column.name (javax.persistence)</display-name>
+      <place><![CDATA[psiMethod().withName("name").withParameters().definedInClass("javax.persistence.Column")]]></place>
+    </injection>
+  </component>
+</application>
