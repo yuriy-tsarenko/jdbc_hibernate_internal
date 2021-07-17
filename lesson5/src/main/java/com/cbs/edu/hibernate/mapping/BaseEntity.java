@@ -1,8 +1,10 @@
 package com.cbs.edu.hibernate.mapping;
 
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.SequenceGenerator;
 
 import lombok.Data;
 
@@ -11,6 +13,10 @@ import lombok.Data;
 public abstract class BaseEntity {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+                    generator = "entity_generator")
+    @SequenceGenerator(name = "entity_generator",
+                       sequenceName = "entity_seq",
+                       allocationSize = 1)
     private Integer id;
 }

@@ -11,6 +11,12 @@
         <property name="show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.use_sql_comments">true</property>
+        <property name="hibernate.cache.region.factory_class">ehcache</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+
         <mapping class="com.cbs.edu.hibernate.mapping.Employee"/>
+        <mapping class="com.cbs.edu.hibernate.mapping.Department"/>
+        <mapping class="com.cbs.edu.hibernate.mapping.EmployeeDetails"/>
+        <mapping class="com.cbs.edu.hibernate.mapping.Project"/>
     </session-factory>
 </hibernate-configuration>
