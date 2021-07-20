@@ -1,4 +1,4 @@
-package com.jdbc_hibernate_internal.lesson1.ex003_result_set;
+package com.jdbc_hibernate_internal.lesson1.lesson1.ex003_result_set;
 
 import java.util.List;
 

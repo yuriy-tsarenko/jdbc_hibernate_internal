@@ -1,4 +1,4 @@
-package com.jdbc_hibernate_internal.lesson1.ex001_get_db_connection;
+package com.jdbc_hibernate_internal.lesson1.lesson1.ex001_get_db_connection;
 
 import org.apache.log4j.Logger;
 

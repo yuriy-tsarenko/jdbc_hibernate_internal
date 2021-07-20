@@ -1,8 +1,8 @@
-package com.jdbc_hibernate_internal.lesson1.demo_insert;
+package com.jdbc_hibernate_internal.lesson1.lesson1.demo_insert;
 
 
-import com.jdbc_hibernate_internal.lesson1.ex003_result_set.Customer;
-import com.jdbc_hibernate_internal.lesson1.ex003_result_set.DataBaseConnector;
+import com.jdbc_hibernate_internal.lesson1.lesson1.ex003_result_set.Customer;
+import com.jdbc_hibernate_internal.lesson1.lesson1.ex003_result_set.DataBaseConnector;
 
 import java.math.BigDecimal;
 

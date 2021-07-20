@@ -1,4 +1,4 @@
-package com.jdbc_hibernate_internal.lesson1.ex002_statement;
+package com.jdbc_hibernate_internal.lesson1.lesson1.ex002_statement;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

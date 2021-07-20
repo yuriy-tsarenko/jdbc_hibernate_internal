@@ -1,4 +1,4 @@
-package com.jdbc_hibernate_internal.lesson1.ex006_delete_from_dish;
+package com.jdbc_hibernate_internal.lesson1.lesson1.ex006_delete_from_dish;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
