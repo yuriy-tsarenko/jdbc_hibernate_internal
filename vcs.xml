@@ -6,6 +6,10 @@
           <option name="url" value="https://github.com/Eugene1992/cbs-spring-july-2021.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/yuriy-tsarenko/jdbc_hibernate_internal.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents" />
